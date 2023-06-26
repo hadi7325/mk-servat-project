@@ -5,7 +5,7 @@ import data from "../product/dataProduct.json"
 import "./sass.scss"
 function Sminar() {
     const [items, setItems] = useState(data.products);
-    console.log(data)
+
     return (
         <>
         <Nav/>

@@ -34,15 +34,15 @@ function Nav() {
           <img src="./images/shape/MS.png" alt="" />
         </div>
         <ul className={`${menu ? "links active" : "links"}`}>
-          <Link className="link" to="/"><p>خانه</p><i><FcHome /></i></Link>
-          <Link className="link" to="/sminar"><p>سمینار و کارگاه</p> <i><IoIosChatbubbles /></i></Link>
-          <Link  className="link" to="/products"><p>محصولات</p> <i style={{ color: "orange" }}><FaProductHunt /></i></Link>
-          <Link className="link bag" to="/shopping-bag"><p>سبد خرید</p> <i style={{ color: "orangered" }}><FaShoppingCart /><div className={`${cardItem.length > 0 ? "count active" : "count"}`}><span>{cardItem.length}</span></div></i></Link>
-          <Link className="link call" to="/contact-us"><p>درخواست مشاوره ما</p> <i style={{ color: "blueviolet" }}><IoIosChatbubbles /></i></Link>
-          <Link className="link signin" to="/sign-in"><p>ورود</p> <i><BiLogInCircle /></i></Link>
-          <Link className="link register" to="/sign-in"><p>ثبت نام</p> <i><FcRegisteredTrademark /></i></Link>
-          <Link className="link" to="/about"><p>درباره من</p> <i><FcAbout /></i></Link>
-          <Link className="link" to="/contact-us"><p>تماس با ما</p> <i><FcPhone /></i></Link>
+          <Link onClick={() => setMenu(false)} className="link" to="/"><p>خانه</p><i><FcHome /></i></Link>
+          <Link onClick={() => setMenu(false)} className="link" to="/sminar"><p>سمینار و کارگاه</p> <i><IoIosChatbubbles /></i></Link>
+          <Link onClick={() => setMenu(false)} className="link" to="/products"><p>محصولات</p> <i style={{ color: "orange" }}><FaProductHunt /></i></Link>
+          <Link onClick={() => setMenu(false)} className="link bag" to="/shopping-bag"><p>سبد خرید</p> <i style={{ color: "orangered" }}><FaShoppingCart /><div className={`${cardItem.length > 0 ? "count active" : "count"}`}><span>{cardItem.length}</span></div></i></Link>
+          <Link onClick={() => setMenu(false)} className="link call" to="/contact-us"><p>درخواست مشاوره ما</p> <i style={{ color: "blueviolet" }}><IoIosChatbubbles /></i></Link>
+          <Link onClick={() => setMenu(false)} className="link signin" to="/sign-in"><p>ورود</p> <i><BiLogInCircle /></i></Link>
+          <Link onClick={() => setMenu(false)} className="link register" to="/sign-in"><p>ثبت نام</p> <i><FcRegisteredTrademark /></i></Link>
+          <Link onClick={() => setMenu(false)} className="link" to="/about"><p>درباره من</p> <i><FcAbout /></i></Link>
+          <Link onClick={() => setMenu(false)} className="link" to="/contact-us"><p>تماس با ما</p> <i><FcPhone /></i></Link>
         </ul>
         <div onClick={() => setMenu(true)} className='btnMenu'><i><HiMenuAlt3 /></i></div>
 
