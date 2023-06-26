@@ -20,7 +20,7 @@ function Sminar() {
                         <div className='col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12' key={item.key}>
                             <div className='sminar-item'>
                                 <div className='img'>
-                                    <img src={item.image} alt="" />
+                                    <img src={process.env.PUBLIC_URL + item.image} alt="" />
                                     <div className='title'>
                                        {item.name}
                                     </div>

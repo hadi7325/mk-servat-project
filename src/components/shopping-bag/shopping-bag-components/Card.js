@@ -17,7 +17,7 @@ function Card() {
                     cardItem && cardItem.map((item) =>
                         <div className="shopping-item" key={item.id}>
                             <i onClick={() => removeItemCard(item)} className='close '><FaTimes /></i>
-                            <img src={item.image} alt="" />
+                            <img src={process.env.PUBLIC_URL + item.image} alt="" />
                             <div className="name">{item.name}</div>
                             <div className="price-box">
                                 <div className="price-main">{changeCurrency(item.discount)}<span>تومان</span></div>

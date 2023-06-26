@@ -17,7 +17,7 @@ function ResultCard() {
                     cardItem.map((item) =>
                         <div className="product-factor" key={item.id}>
                             <div className="product-name">
-                                <img src={item.image} alt="" />
+                                <img src={process.env.PUBLIC_URL + item.image} alt="" />
                                 <div className="name">{item.name} </div>
                             </div>
                             <div className="price">

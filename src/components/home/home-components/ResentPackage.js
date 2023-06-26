@@ -40,7 +40,7 @@ function ResentPackage() {
 
                                                 </div>
                                             </div>
-                                            <img src={item.image} alt="" />
+                                            <img src={process.env.PUBLIC_URL + item.image} alt="" />
                                         </div>
                                     </Link>
                                 )

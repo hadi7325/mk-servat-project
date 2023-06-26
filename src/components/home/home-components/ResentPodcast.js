@@ -71,7 +71,7 @@ function ResentPodcast() {
                                     dataSlider.products.map((slide) =>
                                         <div className="resent-podcasts-item" key={slide.id} >
                                             <Link onClick={() => sentProduct(slide)} to="/single-product">
-                                            <img src={slide.image} alt="" />
+                                            <img src={process.env.PUBLIC_URL + slide.image} alt="" />
                                             <div className="name">{slide.name}</div>
                                             <div className="grouping">{slide.title}</div>
 

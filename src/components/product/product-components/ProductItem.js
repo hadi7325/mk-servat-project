@@ -22,7 +22,7 @@ function ProductItem({ items,loadnig }) {
 
                             <Link onClick={() => sentProduct(product)} to="/single-product">
                                 <div className="item-img-box">
-                                    <img src={product.image} alt="" />
+                                    <img src={process.env.PUBLIC_URL + product.image} alt="" />
                                 </div>
                                 <div className="name">{product.name}</div>
                                 <div className="grouping">{product.title}</div>
