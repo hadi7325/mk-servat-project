@@ -1,22 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-// import App from './App';
-import Router from './components/Route';
 import  {AppProvider}  from "./context/context"
 import ScrollToTop from './components/ScrollTop';
+import App from './App';
 
 console.log(ScrollToTop)
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    {/* <AppProvider>
-    <Router>
-     
-    </Router>
-    </AppProvider> */}
-    <>laksddjlasjkl</>
+    <AppProvider>
+      <App/>
+    </AppProvider>
   
   </React.StrictMode>
 );
