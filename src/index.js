@@ -13,7 +13,7 @@ root.render(
   <React.StrictMode>
     <AppProvider>
     <Router>
-      <ScrollToTop/>
+     
     </Router>
     </AppProvider>
   
