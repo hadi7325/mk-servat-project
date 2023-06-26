@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/number/vazir.eot') format('eot');
+    src : url('../fonts/number/vazir.ttf') format('truetype'),
+    url('../fonts/number/vazir.woff') format('woff');
+}
+@font-face {
+    font-family: 'kalamehweb';
+    src: url('../fonts/woff/KalamehWeb-Light.woff') format('woff');
+    src : url('../fonts/woff2/KalamehWeb-Light.woff2') format('woff2'),
+  
+}
+
