@@ -1,0 +1,69 @@
+{
+    "products": [
+        {
+            "id": "1",
+            "image": "/images/product/product-1.png",
+            "name": "فروش 1",
+            "title": " دسته بندی شماره یک",
+            "price": 125000,
+             "discount" : 150000,
+            "categury": "آموزش فروش"
+
+        },
+        {
+            "id": "2",
+            "image": "/images/product/product-2.png",
+            "name": "املاک",
+            "title": " دسته بندی شماره دو",
+            "price": 75000,
+            "discount" :90000,
+            "categury": "آموزش املاک"
+        },
+        {
+            "id": "3",
+            "image": "/images/product/product-3.png",
+            "name": "خودشناسی",
+            "title": " دسته بندی شماره سه",
+            "price": 95000,
+            "discount" : 130000,
+            "categury": "آموزش خودشناسی"
+        },
+        {
+            "id": "4",
+            "image": "/images/product/product-4.png",
+            "name": "برند سازی",
+            "title": "دسته بندی شماره چهار",
+            "price": 210000,
+            "discount" : 250000,
+            "categury": "آموزش برند سازی"
+        },
+        {
+            "id": "5",
+            "image": "/images/product/product-2.png",
+            "name": "فروش 2",
+            "title": " دسته بندی شماره پنج",
+            "price": 133000,
+            "discount" : 150000,
+            "categury": "آموزش فروش"
+        },
+        {
+            "id": "6",
+            "image": "/images/product/product-2.png",
+            "name": "فروش 3",
+            "title": " دسته بندی شماره شش",
+            "price": 50000,
+            "discount" : 75000,
+            "categury": "آموزش فروش"
+        },
+        {
+            "id": "7",
+            "image": "/images/product/product-1.png",
+            "name": "برند سازی 2",
+            "title": " دسته بندی شماره هفت",
+            "price": 350000,
+            "discount" : 400000,
+            "categury": "آموزش برند سازی"
+        }
+    ]
+}
+

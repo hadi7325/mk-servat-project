@@ -1,0 +1,257 @@
+$main-color: #ebd4bf;
+$background: #000;
+$color-white: #fff;
+$dark-text: #333;
+$border-color : #3f352c;
+$background-1: linear-gradient(#5a4d41, #3f352c);
+$background-2: linear-gradient(#3f352c, #5a4d41);
+$desc-color: #d9d8da;
+$box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+
+
+
+.about-page {
+    width: 100%;
+
+    padding: 150px 0;
+    background: url("../../../public/images/shape/home-background.png");
+    background-size: cover;
+
+    .home-page-img {
+        width: 100%;
+
+        .img-box {
+            width: 100%;
+            height: 400px;
+            border: solid 1px $main-color;
+            border-radius: 50% 50% 0 0;
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+
+
+    }
+
+    .home-page-text {
+        width: 100%;
+        padding-right: 100px;
+
+        .title {
+            font-size: 45px;
+            color: $color-white;
+            font-weight: bold;
+            text-align: right;
+
+            span {
+                color: $main-color;
+            }
+        }
+    }
+
+    .home-page-desc {
+        margin-top: 40px;
+
+        li {
+            margin-top: 15px;
+            list-style: initial;
+            color: $desc-color;
+        }
+    }
+
+    .search {
+        width: 80%;
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: solid 1px $border-color;
+        padding: 10px;
+
+        input {
+            background-color: transparent;
+            width: 80%;
+            border: none;
+            outline: none;
+            font-family: "kalamehweb";
+            color: $color-white;
+        }
+
+        .btn-search {
+            cursor: pointer;
+        }
+    }
+
+    .counter {
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .item {
+            .count {
+                color: $color-white;
+                font-weight: bold;
+                font-size: 25px;
+            }
+
+            .desc {
+                color: $desc-color;
+            }
+        }
+    }
+    .about-desc-academy {
+        background-color: $background;
+        padding: 30px;
+        border-radius: 10px;
+        position: relative;
+        margin: 150px 0;
+        
+        .title {
+            font-size: 25px;
+        }
+
+        .desc {
+            width: 60%;
+
+            p {
+                color: $desc-color;
+                line-height: 35px;
+            }
+        }
+
+        .about-desc-img {
+            position: absolute;
+            top: -10px;
+
+            left: -130px;
+
+            img {
+                width: 400px;
+                height: 450px;
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 1200px) {
+    
+    .about-page .home-page-text .title{
+        font-size: 40px;
+    }
+   
+}
+@media screen and (max-width : 992px) {
+    .row.flex{
+        flex-direction: column-reverse;
+    }
+    .about-page .home-page-text .title {
+     text-align: center;
+    }
+    .about-page .home-page-text{
+        padding-right: 0;
+    }
+    .about-page .home-page-img{
+        width: 70%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .about-page .home-page-desc li{
+        text-align: center;
+        list-style-position: inside;
+    }
+    .about-page .search{
+       margin: 50px auto;
+    }
+    .about-page .counter .item .count{
+        text-align: center;
+    }
+    .about-page .about-desc-academy .about-desc-img{
+        position: initial;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .about-page .about-desc-academy .about-desc-img img {
+        width: 60%;
+    } 
+
+    .about-page .about-desc-academy .desc {
+        width: 100%;
+    }
+}
+@media screen and (max-width : 768px) {
+    .about-page .home-page-text .title {
+        font-size: 30px;
+    }
+    .about-page .counter .item .count{
+        font-size: 16px;
+    }
+    .about-page .about-desc-academy .about-desc-img img {
+        width: 80%;
+    }
+} 
+
+@media screen and (max-width : 567px) {
+    .about-page .home-page-text .title {
+        font-size: 22px;
+    }
+    .about-page .home-page-desc li{
+        font-size: 14px;
+    }
+    .about-page .counter .item .desc{
+        font-size: 12px;
+    }
+    .about-page .counter .item .count{
+        font-size: 16px;
+    }
+    .about-page .home-page-img {
+        width: 90%;
+    }
+    .about-page .about-desc-academy .about-desc-img img {
+        width: 80%;
+    }
+    .about-page .home-page-img .img-box img{
+        bottom: 5px;
+        right: 5px;
+    }
+    .about-page .about-desc-academy{
+        padding: 10px;
+    }
+    .about-page .about-desc-academy .about-desc-img img {
+        width: 95%;
+        height: 300px;
+    }
+} 
+
+
+@media screen and (max-width : 400px) {
+    .about-page .home-page-text .title {
+        font-size: 18px;
+    }
+    .about-page .home-page-desc li{
+        font-size: 12px;
+    }
+    .about-page .counter .item .desc{
+        font-size: 10px;
+    }
+    .about-page .home-page-img .img-box{
+        height: 300px;
+    }
+   
+   
+   
+   
+    .about-page .about-desc-academy .about-desc-img img {
+        width: 95%;
+        height: 300px;
+    }
+} 

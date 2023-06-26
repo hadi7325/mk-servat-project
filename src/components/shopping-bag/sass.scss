@@ -1,0 +1,291 @@
+$main-color: #ebd4bf;
+$background: #000;
+$color-white: #fff;
+$dark-text: #333;
+$border-color : #3f352c;
+$background-1: linear-gradient(#5a4d41, #3f352c);
+$background-2: linear-gradient(#3f352c, #5a4d41);
+$desc-color: #d9d8da;
+$box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+
+
+.shopping {
+    width: 100%;
+    background: url("../../../public/images//shape/home-background.png");
+    background-size: cover;
+    padding-bottom: 150px;
+     
+    .title {
+        text-align: center;
+        padding: 150px 0;
+        font-size: 25px;
+        color: $color-white;
+        font-weight: bold;
+      
+        span {
+            color: $main-color;
+        }
+    }
+
+    .all-item {
+    margin-top: 50px;
+        .shopping-item {
+            display: flex;
+            background-color: $background;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            font-size: 20px;
+            padding: 20px;
+            .close {
+                color: $background;
+                width: 40px;
+                height: 40px;
+                background-color: $main-color;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 10px;
+                cursor: pointer;
+                font-weight: bold;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    background-color: #333;
+                    color: $main-color;
+                }
+            }
+
+            img {
+                width: 100px;
+                height: 70px;
+                border-radius: 10px;
+                object-fit: cover;
+            }
+
+            .name {
+                color: $color-white;
+                margin-right: 10px;
+            }
+
+            .price-box {
+                
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+                .price-main {
+                    color: $desc-color;
+                    text-decoration: line-through;
+                }
+
+                .price-item {
+                    display: flex;
+                    font-weight: bold;
+
+                    p {
+                        color: $main-color;
+                    }
+
+                    span {
+                        color: $desc-color;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+        .card-message{
+          text-align: center;
+          background-color: $border-color;
+          color: $main-color;
+          padding: 10px;
+          border-radius: 5px;
+          font-size: 25px;
+          display: none;
+        }
+        .card-message.active{
+            display: block;
+        }
+    }
+
+    .shopping-factor {
+        padding: 10px;
+        text-align: center;
+        background-color: $background;
+        border-radius: 10px;
+        margin-top: 50px;
+        span {
+            text-align: center;
+            color: $color-white;
+        }
+
+        .total-price {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .text {
+                color: $desc-color;
+            }
+
+            .price {
+                color: $main-color;
+                display: flex;
+
+                span {
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        .total-profit {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 15px;
+
+            .profit {
+                color: $desc-color;
+            }
+
+            .price {
+                color: $main-color;
+            }
+        }
+
+        .discount-code {
+            width: 100%;
+            border-radius: 10px;
+            background-color: #111;
+
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            input {
+                background: transparent;
+                border: none;
+                outline: none;
+                padding: 10px;
+                font-family: "kalamehweb";
+                color: $color-white;
+                
+            }
+            .submit{
+   
+                padding: 10px;
+                background-color: $main-color;
+                font-family: "kalamehweb";
+                border-radius: 10px;
+                font-weight: bolder;
+                color: $background;
+                transition: all 0.3s ease-in-out;
+    
+                &:hover {
+                    color: $color-white;
+                    background-color: #333;
+                    cursor: pointer;
+                }
+            }
+
+
+        }
+
+        .payment {
+            background-color: #111;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 15px;
+
+            .text {
+                color: $desc-color;
+            }
+
+            .result-price {
+                p {
+                    color: $main-color;
+                }
+            }
+        }
+
+        .inp-submit {
+
+            margin-top: 15px;
+            width: 100%;
+            padding: 10px;
+            background-color: $main-color;
+            font-family: "kalamehweb";
+            border-radius: 10px;
+            font-weight: bolder;
+            color: $background;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                color: $color-white;
+                background-color: #333;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width : 992px) {
+    .shopping .title {
+        padding: 100px 0 50px 0;
+    }
+
+}
+@media screen and (max-width : 767px) {
+    .shopping .all-item .shopping-item .close{
+        width: 25px;
+        height: 25px;
+        font-size: 14px;
+    }
+    .shopping .all-item .shopping-item img{
+        width: 80px;
+        height: 50px;
+    }
+    .shopping .all-item .shopping-item .name{
+        font-size: 14px;
+    }
+    .shopping .all-item .shopping-item .price-box .price-main{
+        font-size: 14px;
+    }
+    .shopping .all-item .shopping-item .price-box .price-item{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width : 400px) {
+    .shopping .title{
+        font-size: 20px;
+        padding: 100px 0 30px 0;
+    }
+    .shopping .all-item .shopping-item .close{
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+    }
+    .shopping .all-item .shopping-item img{
+        width: 60px;
+        height: 50px;
+    }
+    .shopping .all-item .shopping-item .name{
+        font-size: 12px;
+    }
+    .shopping .all-item .shopping-item .price-box .price-main{
+        font-size: 12px;
+    }
+    .shopping .all-item .shopping-item .price-box .price-item{
+        font-size: 12px;
+    }
+}

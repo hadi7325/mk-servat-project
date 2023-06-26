@@ -1,0 +1,58 @@
+$main-color: #ebd4bf;
+$background: #000;
+$color-white: #fff;
+$dark-text: #333;
+$border-color : #3f352c;
+$background-1: linear-gradient(#5a4d41, #3f352c);
+$background-2: linear-gradient(#3f352c, #5a4d41);
+$desc-color: #d9d8da;
+$box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+
+.grouping-section{
+    background: url("../../../public/images/shape/home-background.png");
+    width: 100%;
+    background-size: cover;
+    padding: 200px 0;
+    .title{
+        font-size: 25px;
+        color: $color-white;
+        text-align: center;
+        margin: 50px 0;
+        font-weight: bold;
+        span{
+            color: $main-color;
+            
+        }
+    }
+
+    .grouping-item{
+        text-align: center;
+        width: 50%;
+        margin: auto;
+        background-color: $main-color;
+        color: $background;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            background-color: #000;
+            color: #fff;
+        }
+        p{
+            font-weight: bolder;
+        }
+    }
+}
+
+
+@media screen and (max-width : 567px){
+    .grouping-section .grouping-item{
+        width: 100%;
+    }
+    .grouping-section .title{
+        font-size: 20px;
+    }
+}

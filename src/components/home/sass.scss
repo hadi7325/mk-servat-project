@@ -1,0 +1,1082 @@
+$main-color: #ebd4bf;
+$background: #000;
+$color-white: #fff;
+$dark-text: #333;
+$border-color : #3f352c;
+$background-1: linear-gradient(#5a4d41, #3f352c);
+$background-2: linear-gradient(#3f352c, #5a4d41);
+$desc-color: #d9d8da;
+$box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+.home-page {
+    width: 100%;
+
+    padding: 150px 0;
+    background: url("../../../public/images/shape/home-background.png");
+    background-size: cover;
+
+    .home-page-img {
+        width: 100%;
+
+        .img-box {
+            width: 100%;
+            height: 400px;
+            border: solid 1px $main-color;
+            border-radius: 50% 50% 0 0;
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+
+        .social {
+            width: 100%;
+            margin-top: 10px;
+            border-bottom: solid 3px $border-color;
+
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                li {
+                    color: $color-white;
+                    cursor: pointer;
+                    margin-bottom: -3px;
+                    padding-bottom: 5px;
+                    transition: all .3s;
+                    border-bottom: solid 1px $border-color;
+
+                    &:hover {
+                        border-bottom: solid 1px $desc-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .home-page-text {
+        width: 100%;
+        padding-right: 100px;
+
+        .title {
+            font-size: 45px;
+            color: $color-white;
+            font-weight: bold;
+            text-align: right;
+
+            span {
+                color: $main-color;
+            }
+        }
+    }
+
+    .home-page-desc {
+        margin-top: 20px;
+
+        li {
+            margin-top: 10px;
+            list-style: initial;
+            color: $desc-color;
+        }
+    }
+
+    .search {
+        width: 80%;
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: solid 1px $border-color;
+        padding: 10px;
+
+        input {
+            background-color: transparent;
+            width: 80%;
+            border: none;
+            outline: none;
+            font-family: "kalamehweb";
+            color: $color-white;
+        }
+
+        .btn-search {
+            cursor: pointer;
+        }
+    }
+
+    .counter {
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .item {
+            .count {
+                color: $color-white;
+                font-weight: bold;
+                font-size: 25px;
+            }
+
+            .desc {
+                color: $desc-color;
+            }
+        }
+    }
+}
+
+//level 
+.level {
+    width: 100%;
+    padding: 80px 0;
+    background-color: $background;
+
+    .level-item {
+        border-right: 1px solid $desc-color;
+        padding-right: 10px;
+
+        li {
+            color: $color-white;
+            list-style: initial;
+        }
+
+        p {
+            color: $desc-color;
+            margin-top: 10px;
+        }
+    }
+}
+
+//tags
+.tags{
+    width: 100%;
+    padding: 50px 0;
+    background: $background-2;
+    .title {
+        font-size: 20px;
+        color: $color-white;
+
+        span {
+            color: $main-color;
+        }
+    }
+    .desc {
+        margin-top: 20px;
+        color: $desc-color;
+        list-style: initial;
+    }
+
+    .keyword-item{
+        background-color: $main-color;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+         width: 100%;
+         display: block;
+         transition: all 0.3s ease;
+
+         &:hover{
+            background-color: $background;
+           .link{
+            color: $main-color;
+           }
+         }
+        .link{
+             color: $dark-text;
+             transition: all 0.3s ease;
+             font-weight: bold;
+
+         }
+         .link.pro{
+            font-size: 12px;
+         }
+    }
+}
+//resent-podcast
+.resent-podcast {
+    width: 100%;
+    padding: 50px 0;
+    background: $background-1;
+
+    .title {
+        font-size: 20px;
+        color: $color-white;
+
+        span {
+            color: $main-color;
+        }
+    }
+
+    .desc {
+        margin-top: 20px;
+        color: $desc-color;
+        list-style: initial;
+    }
+
+    .slider {
+        width: 100%;
+
+        .resent-podcasts-item {
+            width: 100%;
+            position: relative;
+            display: block;
+            text-align: center;
+            background-color: #5a4d41;
+            border-radius: 43% 43% 0 0;
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
+
+            img {
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+            }
+
+            .name {
+                color: rgb(255, 255, 255);
+                font-size: 15px;
+                font-weight: bold;
+                margin: 10px 0;
+            }
+
+            .grouping {
+                color: rgb(255, 255, 255);
+            }
+
+            .price-box {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                margin: 10px 0;
+
+                .price {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    color: $main-color;
+                    font-size: 14px;
+                    font-weight: 700;
+                    align-items: center;
+
+                    span {
+                        margin-right: 5px;
+                    }
+                }
+
+                .add-to {
+                    font-size: 14px;
+                    display: flex;
+                    color: $main-color;
+                    flex-direction: row-reverse;
+                    font-weight: 700;
+                    align-items: center;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    padding: 10px;
+
+                    i {
+                        color: $main-color;
+                        margin-right: 5px;
+                        display: flex;
+                    }
+
+                    &:hover {
+                        background-color: $background;
+                        color: $main-color;
+                        border-radius: 10px;
+                    }
+                }
+            }
+
+            &:hover {
+                border: solid 1px $color-white;
+            }
+        }
+    }
+}
+
+.slick-next:before {
+    content: '→';
+    position: absolute;
+    top: 50% !important;
+    right: -10px !important;
+    font-size: 35px;
+    z-index: 10;
+}
+
+.slick-prev:before {
+    content: "←";
+    position: absolute;
+    top: 50% !important;
+    left: -10px !important;
+    font-size: 35px;
+    z-index: 10;
+}
+
+
+
+
+
+.slick-slide>div {
+    margin: 0 10px;
+}
+
+.slick-list {
+    margin: 0 -10px;
+}
+
+
+
+
+
+.package-resent {
+    width: 100%;
+    background: $background-2;
+    padding: 100px 0;
+
+    .title {
+        font-size: 25px;
+        color: $color-white;
+        font-weight: bolder;
+
+        span {
+            color: $main-color;
+        }
+    }
+
+    .desc {
+
+        li {
+            list-style: initial;
+            color: $desc-color;
+            margin-top: 15px;
+            font-weight: bold;
+
+        }
+    }
+
+    .see-all {
+        font-weight: bold;
+        color: #111;
+        background-color: $main-color;
+        padding: 5px 20px;
+        border-radius: 50px;
+        margin-top: 30px;
+        transition: all 0.3s ease-in;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .see-all:hover {
+        background-color: #000;
+        color: $main-color;
+    }
+
+    .img-box {
+        border: solid 1px $main-color;
+        border-radius: 25% 25% 0 0;
+        position: absolute;
+        right: 65%;
+        height: 380px;
+        width: 300px;
+        z-index: 1000;
+
+        img {
+            width: 300px;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+
+        }
+
+        .line-box {
+            position: absolute;
+            top: 0px;
+            left: 13%;
+
+            img {
+                width: 100px;
+            }
+        }
+    }
+
+    .package-resent-items {
+        width: 100%;
+        height: 450px;
+        overflow-y: scroll;
+        background-color: $background;
+        padding: 5px 30px;
+        border-radius: 10px;
+
+        .package-item {
+            display: flex;
+            margin-top: 20px;
+            padding: 10px;
+            transition: all 0.3s ease-in-out;
+            align-items: center;
+            justify-content: space-between;
+            img {
+                width: 150px;
+                height: 100px;
+                border-radius: 10px;
+                object-fit: cover;
+            }
+
+            .link-package {
+                display: flex;
+            }
+
+            .bio {
+                display: flex;
+                flex-direction: column;
+
+                justify-content: flex-start;
+                padding-right: 15px;
+
+                .intro {
+                    .name {
+                        font-size: 20px;
+                        color: $color-white;
+                    }
+
+                    .grouping {
+                        font-size: 14px;
+                        color: $main-color;
+                        margin-top: 10px;
+                    }
+                }
+
+                .price-box {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-top: 30px;
+
+                    .price {
+                        color: $color-white;
+                        font-weight: bold;
+                        display: flex;
+                        font-size: 14px;
+
+                        p {
+                            color: $color-white;
+                        }
+
+                        span {
+                            color: $main-color;
+                            margin-right: 5px;
+                        }
+                    }
+
+                    .add-shop {
+                        color: $main-color;
+                        font-size: 14px;
+                        cursor: pointer;
+                        padding: 10px;
+                        transition: all 0.3s ease;
+                        display: flex;
+                        align-items: center;
+
+                        i {
+                            display: flex;
+                            margin-right: 5px;
+                        }
+
+                        &:hover {
+                            background-color: $main-color;
+                            color: $background;
+                            font-weight: bold;
+                            padding: 10px;
+                            border-radius: 10px;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .package-item:hover {
+            background-color: rgba(153, 153, 153, 0.5);
+            border-radius: 10px;
+        }
+    }
+
+
+}
+
+//papers-resent section
+
+.papers-resent {
+    width: 100%;
+    padding: 50px 0 150px 0;
+    background: $background-1;
+
+    .title {
+        font-size: 25px;
+        color: $color-white;
+        font-weight: 700;
+
+        span {
+            color: $main-color;
+        }
+    }
+
+    .desc {
+        li {
+            list-style: initial;
+            color: $desc-color;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    }
+
+    .see-all {
+        font-weight: bold;
+        color: #111;
+        background-color: $main-color;
+        padding: 5px 20px;
+        border-radius: 50px;
+        margin-top: 30px;
+        transition: all 0.3s ease-in;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .see-all:hover {
+        background-color: #000;
+        color: $main-color;
+    }
+
+    .papers-resent-item {
+        background-color: $background;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        position: relative;
+        padding: 60px 30px;
+
+        .intro {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            padding-right: 15px;
+
+            .name {
+                color: $main-color;
+                font-weight: bold;
+            }
+
+            .desc {
+                color: $desc-color;
+                margin-top: 15px;
+                line-height: 30px;
+            }
+
+            span {
+                color: $color-white;
+                margin-top: 10px;
+                display: inline-block;
+                font-weight: 14px;
+                margin-right: 15px;
+                transition: all 0.3s ease-in-out;
+                cursor: pointer;
+
+                i {
+                    font-size: 10px;
+                }
+
+                &:hover {
+                    color: $main-color
+                }
+            }
+
+        }
+
+        .paper-resent-img {
+            position: absolute;
+            top: 50px;
+            left: 10%;
+
+            img {
+                width: 300px;
+                height: 300px;
+            }
+        }
+    }
+}
+
+//footer
+footer {
+    width: 100%;
+    background-color: $background;
+
+    form {
+        width: 90%;
+        margin: auto;
+        border: solid 1px $main-color;
+        border-radius: 50% 50% 0 0;
+        position: relative;
+        height: 450px;
+        margin-top: -100px;
+
+        .form-group {
+            position: absolute;
+            width: 100%;
+            border-radius: 50% 50% 0 0;
+            background-color: #111;
+            bottom: 20px;
+            height: 100%;
+            right: 20px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border: solid 2px $border-color;
+
+            .title {
+                color: $color-white;
+                font-weight: 700;
+                margin: 10px 0;
+            }
+
+            .all-input {
+                margin-top: 80px;
+                width: 100%;
+                padding: 0 10px;
+
+                .input-group {
+                    width: 100%;
+                    position: relative;
+
+                    input {
+                        width: 100%;
+                        background-color: transparent;
+                        border: none;
+                        outline: none;
+                        border-bottom: solid 1px $main-color;
+                        padding: 15px;
+                        font-family: "kalamehweb";
+                        color: $color-white;
+                    }
+
+                    .error {
+                        position: absolute;
+                        bottom: -17px;
+                        right: 0px;
+                        font-size: 12px;
+                        color: red;
+                        margin-top: 5px;
+                        display: none;
+                    }
+
+                    .error.active {
+                        display: block;
+                    }
+                }
+            }
+
+            .submit {
+                font-weight: bold;
+                color: #111;
+                background-color: $main-color;
+                padding: 5px 20px;
+                border-radius: 50px;
+                margin-top: 30px;
+                transition: all 0.3s ease-in;
+                display: inline-block;
+                font-family: "kalamehweb";
+                outline: none;
+                border: none;
+                cursor: pointer;
+            }
+
+            .submit:hover {
+                background-color: #000;
+                color: $main-color;
+            }
+        }
+    }
+
+    .academy-desc {
+        margin: auto;
+        padding: 0 20px;
+
+        .title {
+            color: $color-white;
+        }
+
+        .desc {
+            color: $desc-color;
+            margin-top: 20px;
+        }
+    }
+
+    .quick-access {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+
+        .link-group {
+            margin-right: 15px;
+
+            .title {
+                color: $color-white;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+
+                li {
+
+                    color: $desc-color;
+                    font-size: 15px;
+                    display: inline-block;
+                    margin-top: 10px;
+
+                    &:hover {
+                        color: $main-color;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width : 1200px) {
+    .package-resent .img-box {
+        display: none;
+    }
+
+    .package-resent .package-resent-items .package-item .bio .intro .name {
+        font-size: 17px;
+    }
+    .slick-next:before {
+        content: '→';
+        position: absolute;
+        top: 50% !important;
+        right: -10px !important;
+        font-size: 35px;
+        z-index: 10;
+    }
+    
+    .slick-prev:before {
+        content: "←";
+        position: absolute;
+        top: 50% !important;
+        left: -10px !important;
+        font-size: 35px;
+        z-index: 10;
+    }
+
+    .slick-prev:before {
+        content: "←";
+        position: absolute;
+        top: 150px;
+        left: 790px !important;
+        font-size: 35px;
+    }
+
+}
+
+@media screen and (max-width : 992px) {
+    .row.flex {
+        flex-direction: column-reverse;
+    }
+
+    .home-page .home-page-text {
+        padding: 0 0;
+    }
+
+    .home-page .home-page-text .title {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .home-page .home-page-desc {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .home-page .home-page-desc li {
+        list-style-position: inside;
+    }
+
+    .home-page .search {
+        margin: auto;
+        width: 50%;
+        margin-top: 50px;
+    }
+
+    .home-page .home-page-img {
+        width: 60%;
+        margin: 60px auto;
+    }
+
+    .level .level-item {
+        margin: 30px 0;
+    }
+
+    .resent-podcast .slider {
+        margin-top: 50px;
+    }
+
+    .resent-podcast .title {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .resent-podcast .desc {
+        text-align: center;
+    }
+
+    .slick-prev:before {
+        content: "←";
+        position: absolute;
+        top: 50% !important;
+        left: -20px !important;
+        font-size: 35px;
+        z-index: 10 !important;
+    }
+
+    .slick-next:before {
+        content: "←";
+        position: absolute;
+        top: 50% !important;
+        right: -20px !important;
+        font-size: 35px;
+        z-index: 10 !important;
+    }
+
+    .papers-resent .title {
+        text-align: center;
+    }
+
+    .papers-resent .desc li {
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .papers-resent .see-all {
+        display: block;
+        width: 30%;
+        margin: 50px auto;
+        text-align: center;
+    }
+
+    .papers-resent .papers-resent-item .intro {
+        width: 65%;
+    }
+
+    .papers-resent .papers-resent-item .paper-resent-img {
+        position: initial;
+        width: 35%;
+    }
+
+    .papers-resent .papers-resent-item .paper-resent-img img {
+        width: 100%;
+        height: 250px;
+    }
+
+    footer form {
+        width: 70%;
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+
+    footer .academy-desc {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    footer .academy-desc .desc {
+        margin-top: 30px;
+        line-height: 35px;
+    }
+
+    footer .quick-access {
+        margin: 50px auto;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .home-page {
+        padding: 120px 0 40px 0;
+    }
+
+    .home-page .home-page-text .title {
+        font-size: 25px;
+    }
+
+    .home-page .counter .item .count {
+        font-size: 18px;
+    }
+
+    .home-page .home-page-img {
+        width: 70%;
+    }
+
+    .level .level-item {
+        padding-right: 25px;
+    }
+
+    .resent-podcast .slider {
+        width: 100%;
+        margin: 50px auto;
+    }
+
+    .resent-podcast .title {
+        font-size: 15px;
+    }
+
+    .package-resent .desc {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .package-resent .title {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .package-resent .package-resent-items {
+        margin-top: 40px;
+    }
+
+    .papers-resent .title {
+        font-size: 22px;
+    }
+
+    .papers-resent .papers-resent-item {
+        flex-direction: column;
+    }
+
+    .papers-resent .papers-resent-item .intro {
+        width: 100%;
+    }
+
+    .papers-resent .papers-resent-item .paper-resent-img {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .papers-resent .papers-resent-item .paper-resent-img img {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width : 600px) {
+    .home-page .home-page-text .title {
+        font-size: 19px;
+    }
+
+    .home-page .home-page-desc li {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .home-page .search {
+        width: 65%;
+    }
+
+    .home-page .counter .item .desc {
+        font-size: 12px;
+    }
+
+    .home-page .home-page-img {
+        width: 95%;
+    }
+
+    .home-page .home-page-img .img-box img {
+        bottom: 10px;
+        right: 10px;
+    }
+    .home-page .home-page-img .social ul li{
+        font-size: 14px;
+    }
+    .resent-podcast .title{
+        font-size: 12px;
+    }
+    .resent-podcast .desc{
+        font-size: 12px;
+    }
+    .resent-podcast .slider{
+        width: 80%;
+    }
+    .package-resent .title{
+        font-size: 17px;
+    }
+    .package-resent .desc li{
+        font-size: 12px;
+    }
+    .package-resent .package-resent-items{
+        padding: 5px 0;
+    }
+    .package-resent .package-resent-items .package-item .bio .intro .name {
+        font-size: 12px;
+    }
+    .package-resent .package-resent-items .package-item img{
+        width: 100px;
+        height: 70px;
+    }
+    .package-resent .package-resent-items .package-item{
+        justify-content: space-around;
+    }
+    .package-resent .package-resent-items .package-item .bio .price-box {
+        margin-top: 0;
+    }
+    .package-resent .package-resent-items .package-item .bio .intro .grouping{
+        font-size: 12px;
+    }
+    .package-resent .package-resent-items .package-item .bio .price-box .price {
+      font-size: 10px;
+    }
+    .package-resent .package-resent-items .package-item .bio .price-box .price {
+       font-size: 10px;
+    }
+    .package-resent .package-resent-items .package-item .bio .price-box .add-shop{
+        font-size: 10px;
+    }
+    .papers-resent .title {
+        font-size: 17px;
+    }
+    .papers-resent .desc li{
+        font-size: 12px;
+    }
+    .papers-resent .see-all {
+        width: 50%;
+    }
+    footer form{
+        width: 90%;
+    }
+    footer .quick-access .link-group .title{
+        font-size: 13px;
+    }
+    footer .quick-access .link-group ul li{
+        font-size: 11px;
+    }
+    footer .academy-desc .desc{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width : 400px) {
+    .level .level-item p{
+        font-size: 12px;
+    }
+    .resent-podcast .slider .resent-podcasts-item img{
+        height: 180px;
+    }
+    .package-resent .package-resent-items .package-item img{
+        width: 70px;
+    }
+}

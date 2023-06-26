@@ -1,0 +1,461 @@
+$main-color: #ebd4bf;
+$background: #000;
+$color-white: #fff;
+$dark-text: #333;
+$border-color : #3f352c;
+$background-1: linear-gradient(#5a4d41, #3f352c);
+$background-2: linear-gradient(#3f352c, #5a4d41);
+$desc-color: #cac8cc;
+$box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+.single-product-item {
+    width: 100%;
+    background: url("../../../public/images/shape/home-background.png");
+    background-size: cover;
+    padding: 80px 0;
+
+    .intro-item {
+
+        padding: 100px 0;
+
+        .intro-item-img {
+            width: 80%;
+            height: 350px;
+            border: solid 1px #ebd4bf;
+            border-radius: 35% 35% 0px 0px;
+            position: relative;
+            margin: auto;
+
+            img {
+                width: 100%;
+                position: absolute;
+                height: 400px;
+                bottom: 25px;
+                right: 25px;
+            }
+        }
+
+        .intro-item-desc {
+            padding: 0 100px;
+
+            .name {
+                font-size: 25px;
+                margin-bottom: 10px;
+                color: $color-white;
+            }
+
+            .grouping {
+                color: $desc-color;
+            }
+
+            .property {
+                margin-top: 40px;
+
+                li {
+                    list-style: initial;
+                    list-style-position: inside;
+                    margin-top: 5px;
+                    color: $desc-color;
+                }
+            }
+
+            .price-box {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 30px;
+                width: 80%;
+
+                .price {
+                    display: flex;
+                    font-family: bolder;
+                    font-size: 22px;
+
+                    p {
+                        color: $color-white;
+                    }
+
+                    span {
+                        color: $main-color;
+                        margin-right: 5px;
+                    }
+                }
+
+                .add-to-shop {
+                    background-color: $main-color;
+                    padding: 10px;
+                    border-radius: 50px;
+                    color: $background;
+                    font-weight: 900;
+                    font-size: 14px;
+                    cursor: pointer;
+                    transition: all 0.3s ease-in;
+
+                    &:hover {
+                        border: solid 1px $border-color;
+                        color: $main-color;
+                        background: transparent;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//single-item-desc section
+
+.single-item-desc {
+    width: 100%;
+    background: $background-2;
+    padding: 50px 0;
+
+    .item-desc {
+        background-color: #000;
+        position: relative;
+        border-radius: 10px;
+        padding: 30px 20px;
+        height: 300px;
+
+        .title {
+            color: $color-white;
+            font-size: 25px;
+        }
+
+        .desc {
+            p {
+                color: $desc-color;
+                font-size: 14px;
+                line-height: 35px;
+                width: 70%;
+            }
+        }
+
+        img {
+            position: absolute;
+            left: -120px;
+            top: -5px;
+            height: 310px;
+            width: 280px;
+            border-radius: 50% 50% 0 0;
+        }
+    }
+}
+
+
+
+.similar-Item {
+    width: 100%;
+    padding: 50px 0;
+    background: $background-1;
+
+    .title {
+        font-size: 20px;
+        color: $color-white;
+
+        span {
+            color: $main-color;
+        }
+    }
+
+    .desc {
+        margin-top: 20px;
+        color: $desc-color;
+        list-style: initial;
+    }
+
+    .slider {
+        width: 100%;
+
+        .similar-podcasts-item {
+            width: 100%;
+            position: relative;
+            display: block;
+            text-align: center;
+            background-color: #5a4d41;
+            border-radius: 43% 43% 0 0;
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
+
+            img {
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+            }
+
+            .name {
+                color: rgb(255, 255, 255);
+                font-size: 15px;
+                font-weight: bold;
+                margin: 10px 0;
+            }
+
+            .grouping {
+                color: rgb(255, 255, 255);
+            }
+
+            .price-box {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                margin: 10px 0;
+
+                .price {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    color: $main-color;
+                    font-size: 14px;
+                    font-weight: 700;
+                    align-items: center;
+
+                    span {
+                        margin-right: 5px;
+                    }
+                }
+
+                .add-to {
+                    font-size: 14px;
+                    display: flex;
+                    color: $main-color;
+                    flex-direction: row-reverse;
+                    font-weight: 700;
+                    align-items: center;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    padding: 10px;
+
+                    i {
+                        color: $main-color;
+                        margin-right: 5px;
+                        display: flex;
+                    }
+
+                    &:hover {
+                        background-color: $background;
+                        color: $main-color;
+                        border-radius: 10px;
+                    }
+                }
+            }
+
+            &:hover {
+                border: solid 1px $color-white;
+            }
+        }
+    }
+}
+
+.slick-next:before {
+    content: '→';
+    position: absolute;
+    top: 150px;
+    right: -150px;
+    font-size: 35px;
+}
+
+.slick-prev:before {
+    content: "←";
+    position: absolute;
+    top: 150px;
+    left: 900px;
+    font-size: 35px;
+}
+
+
+
+
+
+.slick-slide>div {
+    margin: 0 10px;
+}
+
+.slick-list {
+    margin: 0 -10px;
+}
+
+
+.frequently-question {
+    width: 100%;
+    background: $background-2;
+    padding: 50px 0 250px 0;
+    margin-top: -10px;
+
+    .title {
+        font-size: 20px;
+        color: $color-white;
+        text-align: center;
+    }
+
+    .question-item {
+        width: 80%;
+        margin: auto;
+        margin-top: 30px;
+
+        .question {
+            background-color: $background;
+            border-radius: 10px 10px 0 0;
+            color: #454545;
+            padding: 10px;
+            margin-top: 10px;
+            position: relative;
+            cursor: pointer;
+            color: $color-white;
+
+            i {
+                float: left;
+                color: #999;
+                transition: all 0.3s ease;
+            }
+        }
+
+        .question.active {
+            i {
+                transform: rotate(180deg);
+            }
+        }
+
+        .answer {
+            height: 0;
+            background-color: $background;
+            color: $desc-color;
+            font-size: 14px;
+            line-height: 30px;
+            transition: all 0.5s ease-in-out;
+            overflow: hidden;
+            border-top: solid 1px $border-color;
+        }
+
+        .answer.active {
+            height: auto;
+            overflow: auto;
+            padding: 10px;
+        }
+    }
+}
+
+@media screen and (max-width : 1200px) {
+    .single-item-desc .item-desc img {
+        left: -10px;
+    }
+}
+
+@media screen and (max-width : 992px) {
+    .single-product-item .intro-item .intro-item-img {
+        width: 70%;
+    }
+
+    .single-product-item .intro-item .intro-item-desc {
+        width: 70%;
+        margin: 20px auto;
+        padding: 0 0;
+    }
+
+    .single-item-desc .item-desc img {
+        position: initial;
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .single-item-desc .item-desc {
+        height: auto;
+        padding: 30px;
+    }
+
+    .single-item-desc .item-desc .desc p {
+        width: 100%;
+    }
+
+    .similar-Item .title {
+        font-size: 17px;
+    }
+
+    .similar-Item .slider {
+        margin-top: 30px;
+    }
+
+    .frequently-question .question-item {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width : 768px) {
+    .single-product-item .intro-item .intro-item-img {
+        width: 90%;
+        height: 300px;
+
+    }
+
+    .single-product-item .intro-item .intro-item-img img {
+        height: 350px;
+    }
+
+
+    .single-item-desc .item-desc img {
+        position: initial;
+        width: 100%;
+
+    }
+
+    .single-item-desc .item-desc .desc p {
+        width: 100%;
+    }
+
+    .similar-Item .slider .similar-podcasts-item img {
+        height: 190px;
+    }
+
+ 
+
+
+}
+
+@media screen and (max-width : 567px) {
+    .single-product-item .intro-item .intro-item-desc {
+        width: 90%;
+    }
+
+    .single-product-item .intro-item .intro-item-img {
+        width: 70%;
+    }
+
+    .single-product-item .intro-item .intro-item-img img {
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .level .level-item {
+
+        width: 100%;
+        margin: 15px 10px;
+        padding-right: 10px;
+    }
+    .similar-Item .slider {
+        width: 80%;
+        margin: 30px auto;
+    }
+    .single-product-item .intro-item .intro-item-desc .name{
+        font-size: 20px;
+    }
+    .single-product-item .intro-item .intro-item-desc .property li{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .single-product-item .intro-item .intro-item-desc .price-box .price{
+        font-size: 16px;
+    }
+    .single-product-item .intro-item .intro-item-desc .price-box .add-to-shop {
+      font-size: 12px;
+    }
+}
+
+@media screen and (max-width : 400px) {
+    .single-product-item .intro-item .intro-item-img{
+        width: 100%;
+    }
+    .similar-Item .title{
+        font-size: 15px;
+    }
+}

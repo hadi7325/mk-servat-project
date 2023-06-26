@@ -1,0 +1,216 @@
+$main-color: #ebd4bf;
+$background: #000;
+$color-white: #fff;
+$dark-text: #333;
+$border-color : #3f352c;
+$background-1: linear-gradient(#5a4d41, #3f352c);
+$background-2: linear-gradient(#3f352c, #5a4d41);
+$desc-color: #d9d8da;
+$box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+
+
+.final-factor {
+    width: 100%;
+    padding-bottom: 150px;
+    background: url("../../../public/images/shape/home-background.png");
+    background-size: cover;
+
+    .title {
+        text-align: center;
+        padding-top: 150px;
+        color: $color-white;
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    .final-factor-table {
+        margin-top: 100px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+
+        .title-factor {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 5px;
+            background-color: $background;
+            border-radius: 10px;
+
+            div {
+                color: $color-white;
+                width: 20%;
+
+            }
+        }
+
+        .product-factor {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 10px;
+            background-color: #111;
+            border-radius: 10px;
+            padding: 10px;
+
+            >div {
+                width: 20%;
+            }
+
+            .product-name {
+                display: flex;
+                align-items: flex-start;
+
+                justify-content: flex-start;
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 10px;
+                    background-size: cover;
+                }
+
+                .name {
+                    margin-right: 10px;
+                    font-size: 14px;
+                    color: $desc-color;
+                }
+            }
+
+            .price {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                p {
+
+                    color: $desc-color;
+                    text-decoration: line-through;
+
+                }
+
+                span {
+                    color: $color-white;
+                    font-size: 12px;
+                }
+            }
+
+            .total-price {
+                p {
+                    color: $main-color;
+                }
+
+                span {
+                    font-size: 12px;
+                    color: $desc-color;
+                }
+            }
+        }
+
+    }
+
+    .payment {
+        margin-top: 100px;
+        background-color: $background;
+        padding: 15px 10px;
+        border-radius: 10px;
+        text-align: center;
+        width: 100%;
+
+        .title {
+            font-size: 20px;
+            color: $color-white;
+            font-weight: 300;
+            margin-top: -150px;
+        }
+
+        .payment-final-price {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #111;
+            margin-top: 15px;
+            border-radius: 10px;
+            padding: 10px 10px;
+
+            .total {
+                color: $color-white;
+            }
+
+            .price {
+                display: flex;
+                color: $desc-color;
+
+                p {
+                    color: $main-color;
+                }
+
+                span {
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        .ruls {
+            display: flex;
+            align-items: baseline;
+            margin-top: 15px;
+
+            span {
+                font-size: 14px;
+                margin-right: 5px;
+                color: $desc-color;
+            }
+        }
+
+        .final-pay {
+            background-color: $main-color;
+            color: #000;
+            padding: 10px;
+            border-radius: 10px;
+            width: 100%;
+            margin-top: 20px;
+            font-family: "kalamehweb";
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background-color: #111;
+                span{
+                    color: $main-color;
+                }
+                
+            }
+           
+
+          
+        }
+    }
+}
+
+
+@media screen and (max-width : 992px) {
+    .final-factor .final-factor-table{
+        width: 100%;
+    }
+}
+@media screen and (max-width : 768px) {
+    .final-factor .final-factor-table .product-factor .product-name {
+        
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width : 400px) {
+    .final-factor .title{
+        font-size: 20px;
+    }
+    .final-factor .final-factor-table .title-factor div {
+      width: 30%;
+      font-size: 14px;
+    }
+}
