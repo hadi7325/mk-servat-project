@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mk-servat-project/static/css/main.5a234240.css",
-    "main.js": "/mk-servat-project/static/js/main.71a711a3.js",
+    "main.js": "/mk-servat-project/static/js/main.dc16d032.js",
     "static/media/home-background.png": "/mk-servat-project/static/media/home-background.46b9db3cb6041077c0d2.png",
     "static/media/slick.svg": "/mk-servat-project/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/mk-servat-project/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -9,10 +9,10 @@
     "static/media/slick.woff": "/mk-servat-project/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/mk-servat-project/index.html",
     "main.5a234240.css.map": "/mk-servat-project/static/css/main.5a234240.css.map",
-    "main.71a711a3.js.map": "/mk-servat-project/static/js/main.71a711a3.js.map"
+    "main.dc16d032.js.map": "/mk-servat-project/static/js/main.dc16d032.js.map"
   },
   "entrypoints": [
     "static/css/main.5a234240.css",
-    "static/js/main.71a711a3.js"
+    "static/js/main.dc16d032.js"
   ]
 }
